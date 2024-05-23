@@ -83,14 +83,33 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+.content-section1 {
+    padding: 40px 20px;
+    text-align: left;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 .content-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #DD761C; /* Header color */
 }
+.content-section1 h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #DD761C; /* Header color */
+}
 
 .content-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333; /* Text color */
+}
+.content-section1 p {
     font-size: 1.1em;
     line-height: 1.6;
     margin-bottom: 20px;
