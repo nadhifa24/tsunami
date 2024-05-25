@@ -24,6 +24,16 @@ main {
     width: 100%;
     text-align: center;
 }
+.navbar .nav-linkss {
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+    top: 60px;
+    right: 0;
+    background-color: #6DC5D1;
+    width: 100%;
+    text-align: right;
+}
 
 .navbar .nav-links.active {
     display: flex;
@@ -39,8 +49,8 @@ main {
 }
 
 .navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
+    width: 2.2rem;
+    border-radius: 50%;
 }
 
 .nav-links{
@@ -58,6 +68,16 @@ main {
 .navbar .nav-links a:hover {
     color: #DD761C; /* Hover color */
 }
+.navbar .nav-linkss a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-linkss a:hover {
+    color: #DD761C; /* Hover color */
+}
 
 .hamburger {
     /* display: none; */
@@ -71,12 +91,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background: url('Assets/tsunami-jumbroton.jfif') no-repeat center center/cover; */
+    background: url('Assets/sunami.gif') no-repeat center center/cover;
     color: rgb(255, 255, 255);
-    height: 70vh;
+    height: 100vh;
     text-align: center;
     padding: 0 20px;
     background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+}
+
+ .hero-section .lets{
+    padding: 20px;
+    margin-top: 5rem;
+    border-radius: 1rem;
+    color: white; 
+    border: 2px solid #008CBA;
+    text-decoration: none;
+}
+
+.hero-section .lets:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    background-color: #008CBA;
+    color: white;
+    
 }
 
 .hero-section h1 {
@@ -97,6 +135,24 @@ main {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+.content-section3 {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content-section3 p{
+    text-indent: 30px;
+    text-align: left;
+}
+
+#faktor-risiko{
+    text-align: left;
+}
+
 .content-section1 {
     padding: 40px 20px;
     text-align:left;
@@ -130,6 +186,10 @@ main {
     color: #333; /* Text color */
 }
 
+.peta-img{
+    width: 100%;
+}
+
 /* Cards Section Styles */
 .cards-container {
     display: flex;
@@ -159,6 +219,15 @@ main {
 
 }
 
+#member .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
 .card-content {
     padding: 15px;
 }
@@ -175,12 +244,92 @@ main {
     color: #333; /* Card text color */
 }
 
+a:link{
+    text-decoration: none;
+}
+
 /* Footer Styles */
 footer {
     background-color: #6DC5D1; /* Footer color */
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
 }
 
 /* Responsive Styles */
