@@ -21,7 +21,7 @@ main {
     top: 60px;
     right: 0;
     background-color: #6DC5D1;
-    width: 100%;
+    width: 30%;
     text-align: center;
 }
 .navbar .nav-linkss {
@@ -61,12 +61,15 @@ main {
 .navbar .nav-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 10px 0 20px;
     transition: color 0.3s;
+    padding: 10px;
+    text-align: left;
 }
 
 .navbar .nav-links a:hover {
     color: #DD761C; /* Hover color */
+    background-color: #8fe3ff;
 }
 .navbar .nav-linkss a {
     color: white;
